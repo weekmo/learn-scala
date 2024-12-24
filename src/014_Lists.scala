@@ -14,4 +14,7 @@ object Lists extends App {
     println(a.isEmpty)
     println(a.nonEmpty)
     println(a.updated(3, 100))
+
+    // Separate a list with char as a String
+    println(a.mkString(" | "))
 }
