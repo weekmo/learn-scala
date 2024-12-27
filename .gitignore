@@ -69,6 +69,3 @@ project/**/metals.sbt
 
 .bsp
 .history
-project/
-build*
-cs
