@@ -18,7 +18,7 @@ object MethodToFunctions extends App{
     println(baz.qux(f))
     println(baz.qux(x.bar))
 
-    val f2 = x.gym(20, _)
+    val f2 = x.gym(20, _:Int)
     println(baz.qux(f2))
 
     val f3 = x.gym _
