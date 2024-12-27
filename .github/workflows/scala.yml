@@ -21,7 +21,7 @@ jobs:
     steps:
     - name: Install Scala
       run: |
-        curl -fL https://github.com/coursier/coursier/releases/latest/download/cs-x86_64-pc-linux.gz | gzip -d > cs && chmod +x cs && ./cs setup
+        curl -fL https://github.com/coursier/coursier/releases/latest/download/cs-x86_64-pc-linux.gz | gzip -d > cs && chmod +x cs && ./cs setup -y
     - uses: actions/checkout@v4
     - name: Build
       run: |
