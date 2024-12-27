@@ -24,7 +24,7 @@ jobs:
     - name: Change directory to src
       run: |
         cd src
-        sbt build
+        sbt compile
     - name: Run tests
       working-directory: ./src
       run: sbt test

@@ -11,7 +11,7 @@ class Baz(z:Int) {
 
 object MethodToFunctions extends App{
     val x = new Foo(10)
-    val f = x.bar
+    val f = x.bar _
 
     val baz = new Baz(20)
 
@@ -21,7 +21,7 @@ object MethodToFunctions extends App{
     val f2 = x.gym(20, _)
     println(baz.qux(f2))
 
-    val f3 = x.gym
+    val f3 = x.gym _
 
     println(baz.jam(f3))
     println(baz.jam(x.gym))
