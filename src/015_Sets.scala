@@ -5,6 +5,12 @@ object Sets extends App {
     val set1 = Set(1,2,8,9)
 
     println("----- Operations ------")
+    println(set1 + 13)
+    println(set1 - 13)
+    println(set1 - 9)
+    
+
+    println("----- Operations ------")
     println(set diff set1)
     println(set1 diff set)
 

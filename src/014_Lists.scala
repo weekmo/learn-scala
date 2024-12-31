@@ -17,4 +17,13 @@ object Lists extends App {
 
     // Separate a list with char as a String
     println(a.mkString(" | "))
+
+    // Append and Extend a List
+    val aList = List(1,2,3,4)
+
+    val aPrependedList = 0 :: aList
+    println(aPrependedList)
+
+    val anExtenedList = 0 +: aList :+ 6
+    println(anExtenedList)
 }

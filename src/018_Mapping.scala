@@ -50,4 +50,10 @@ object Mapping extends App {
 
     val result2 = for (i <- 1 to 4 if i % 2 == 0; j <- 11 to 14) yield (i, j)
     println(result2)
+
+    val allPairs = for {
+        number <- List(1,2,3)
+        letter <- List('a', 'b', 'c')
+    } yield s"$number - $letter"
+    println(allPairs)
 }
